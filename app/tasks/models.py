@@ -9,4 +9,4 @@ class Task(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='task')
     name = models.CharField(max_length=256, unique=True)
     description = models.TextField(max_length=256)
-    status = models.IntegerField(choices=TaskStatus)
+    # status = models.IntegerField(choices=TaskStatus)
